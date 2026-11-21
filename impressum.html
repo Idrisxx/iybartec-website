@@ -12,9 +12,23 @@
   h1 { font-size:30px; margin:0 0 16px; } h2 { font-size:21px; margin:32px 0 8px; }
   .klein { color:var(--grau); font-size:15px; } a { color:var(--akzent); }
   nav a { margin-right:16px; }
+  html { scroll-padding-top:80px; }
+  body { padding-top:62px; }
+  .laden { position:fixed; top:0; left:0; right:0; z-index:10; background:var(--bg); border-bottom:1px solid var(--linie); }
+  .laden-innen { max-width:720px; margin:0 auto; padding:10px 16px; display:flex; align-items:center; gap:12px; }
+  .laden img { width:40px; height:40px; border-radius:9px; flex:none; }
+  .laden-text { flex:1; min-width:0; line-height:1.25; }
+  .laden-text strong { display:block; }
+  .laden-text span { display:block; color:var(--grau); font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .laden-knopf { flex:none; background:var(--akzent); color:#1c1a18; font-weight:600; font-size:15px; padding:8px 16px; border-radius:999px; text-decoration:none; white-space:nowrap; }
 </style>
 </head>
 <body>
+<div class="laden"><div class="laden-innen">
+  <img src="calcuroll/symbol.png" alt="Calcuroll">
+  <div class="laden-text"><strong>Calcuroll</strong><span>Für iPhone, iPad, Mac und Apple Watch</span></div>
+  <span class="laden-knopf" id="appstore">Bald im App Store</span>
+</div></div>
 <main>
 <nav class="klein"><a href="calcuroll/support.html">Support</a><a href="calcuroll/datenschutz.html">Datenschutz / Privacy</a></nav>
 
